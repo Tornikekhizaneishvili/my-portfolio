@@ -1,12 +1,13 @@
 import React from "react";
 
 import comingSoon from "../assets/portfolio/comingSoon.jpg";
+import weatherApp from "../assets/portfolio/weatherApp.jpg";
 
 const Projects = () => {
   const portfolios = [
     {
       id: 1,
-      src: comingSoon,
+      src: weatherApp,
     },
     {
       id: 2,
@@ -52,12 +53,22 @@ const Projects = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href="https://tokoweather.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href="https://github.com/Tornikekhizaneishvili/weatherapp"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
